@@ -10,13 +10,13 @@
     2. Motors So that bot can move
         
 ##### How This works:
-  1. the color sensor detects where it is standing right now and classify the place as either BLACK or WHITE
-  2. Get appropriate action from the Q-Matrix (First time It would be just random)
-  2.1 Possible actions in my case are move_forward, move_left, move_right
-  3. Execute that action and now the bot is slightly at different place
-  4. Get the value of new state as in first step
-  5. Then it calculates the reward using Reward Function for that state (plus points for being on black spot otherwise panelity Minus Points)
-  5.1. It updates the Q-Matix with the values.
-  6. Loops back to step 1
+    1. the color sensor detects where it is standing right now and classify the place as either BLACK or WHITE
+    2. Get appropriate action from the Q-Matrix (First time It would be just random)
+    2.1 Possible actions in my case are move_forward, move_left, move_right
+    3. Execute that action and now the bot is slightly at different place
+    4. Get the value of new state as in first step
+    5. Then it calculates the reward using Reward Function for that state (plus points for being on black spot otherwise panelity Minus Points)
+    5.1. It updates the Q-Matix with the values.
+    6. Loops back to step 1
 
 @shahraiz ali
